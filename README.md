@@ -16,6 +16,25 @@ Poniższe instrukcje zapewnią Ci kopię projektu uruchomioną na komputerze (pl
 * Zainstaluj na swoim komputerze IDE do programowania w Pythonie np. PyCharm, VS Code. 
 * Skonfiguruj Pythona na swoim komputerze.
 
+### Instalowanie
+
+Przykłady komend:
+
+Aby sklonowanować projekt wpisz:
+
+```
+git clone <adres>
+```
+
+Następna komenda :
+
+```
+pip install kivy
+```
+Kolejna :
+```
+python3 main
+```
 
 ## Uruchamianie testów
 
