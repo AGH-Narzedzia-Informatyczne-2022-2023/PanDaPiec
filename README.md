@@ -2,6 +2,10 @@
 
 Projekt aplikacji mobilnej na Androida, tworzona w Pythonie. 
 
+## Technologie
+* [Python](https://www.python.org/)
+* [Kivi](https://kivy.org/)
+
 ## Jak zacząć?
 
 Poniższe instrukcje zapewnią Ci kopię projektu uruchomioną na komputerze (pliki lokalnie) do celów programistycznych i testowych. Zobacz kroki poniżej, aby zapoznać się z uwagami dotyczącymi uruchamiania projektu.
