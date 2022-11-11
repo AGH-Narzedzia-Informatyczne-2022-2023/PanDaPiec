@@ -39,6 +39,6 @@ python3 cleancode_test
 * **Krzysztof Czerenko** - - [Krzysiek899](https://github.com/Krzysiek899)
 * **Jakub Retajczyk** - - [Jakubret](https://github.com/jakubret)
 * **Maciej Michałek** - - [McMichalek](https://github.com/McMichalek)
-* **Michał Broś** - - [MBrosik](https://github.com/MBrosik
+* **Michał Broś** - - [MBrosik](https://github.com/MBrosik)
 
 Zobacz pełną listę [współtwórców PanDaPięć](https://github.com/orgs/AGH-Narzedzia-Informatyczne-2022-2023/teams/pandapiec/members)
