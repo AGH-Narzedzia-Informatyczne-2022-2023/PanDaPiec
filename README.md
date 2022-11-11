@@ -61,3 +61,12 @@ python3 cleancode_test
 * **Michał Broś** - - [MBrosik](https://github.com/MBrosik)
 
 Zobacz pełną listę [współtwórców PanDaPięć](https://github.com/orgs/AGH-Narzedzia-Informatyczne-2022-2023/teams/pandapiec/members)
+
+## Licencja
+
+Projekt oparty jest na licencji Creative Commons Zero - zobacz [LICENSE.md](LICENSE.md)
+
+## Podziękowania
+
+* [AGH](https://www.agh.edu.pl/), za darmowe GitHub PRO
+* Wszystkim użytkownikom Quiz App
