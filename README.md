@@ -14,26 +14,42 @@ Poniższe instrukcje zapewnią Ci kopię projektu uruchomioną na komputerze (pl
 
 * Musisz posiadać na swoim komputerze skonfigurowanego [Git'a](https://git-scm.com/). 
 * Zainstaluj na swoim komputerze IDE do programowania w Pythonie np. PyCharm, VS Code. 
-* Skonfiguruj Pythona na swoim komputerze.
+* Skonfiguruj Pythona na swoim komputerze (+3.8).
 
 ### Instalowanie
 
-Przykłady komend:
-
-Aby sklonowanować projekt wpisz:
+1. Sklonuj projekt
 
 ```
-git clone <adres>
+git clone https://github.com/AGH-Narzedzia-Informatyczne-2022-2023/PanDaPiec.git
 ```
 
-Następna komenda :
+2. Przejdź do sklonowanego repo, utwórz venv i aktywuj go:
 
 ```
-pip install kivy
+py -3 -m venv .venv
+.venv\scripts\activate
 ```
-Kolejna :
+
+3. (opcjonalnie) Jeśli Powershell wyrzuci błąd:
 ```
-python3 main
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+
+4. Ustaw jako interpreter ten z nowo utworzonego venv'a.
+
+    W przypadku VS Code:
+
+    Będąc w katalogu z projektem, `CTRL + SHIFT + P`, wpisz `Python: Select Interpreter`, wybierz z listy ten, który znajduje się w .venv
+
+5. Zainstaluj moduły:
+```
+pip install -r requirements.txt
+```
+
+## Uruchamianie projektu
+```
+python main.py
 ```
 
 ## Uruchamianie testów
