@@ -1,0 +1,81 @@
+#:kivy 2.1.0
+
+<DebugScreen>:
+    FloatLayout:
+        Label:
+            text: "Debug"
+            font_size: 32
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "Testowy"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.85}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Główny"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.725}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Kategorie"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.6}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Poziom trudności"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.475}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Pytania"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.35}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Podsumowanie"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.225}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+        Button:
+            text: "Poprawne odpowiedzi"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "left"
+                root.manager.current = "Test"
+
+<TestScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran testowy"
+            font_size: 32
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
