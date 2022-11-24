@@ -62,7 +62,7 @@
             pos_hint: {"center_x": 0.5, "center_y": 0.1}
             on_press:
                 root.manager.transition.direction = "left"
-                root.manager.current = "Test"
+                root.manager.current = "CorrectAnswers"
 
 <TestScreen>:
     FloatLayout:
@@ -79,3 +79,27 @@
             on_press:
                 root.manager.transition.direction = "right"
                 root.manager.current = "Debug"
+
+<CorrectAnswersScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran poprawnych odpowiedzi"
+            font_size: 32
+            # size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            halign: "center"
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+
+        Image:
+            source: './media/images/lazypanda.jpg'
+            size: self.texture_size

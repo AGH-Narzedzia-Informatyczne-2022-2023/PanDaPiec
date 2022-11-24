@@ -4,6 +4,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 
 # Importy ekranów
 from screens.TestScreen import TestScreen
+from screens.CorrectAnswersScreen import CorrectAnswersScreen
 
 # Rozmiar okna
 from kivy.config import Config
@@ -27,6 +28,7 @@ class QuizApp(App):
         # Tu dodajemy wszystkie ekrany
         sm.add_widget(DebugScreen())
         sm.add_widget(TestScreen())
+        sm.add_widget(CorrectAnswersScreen())
 
         return sm
 
