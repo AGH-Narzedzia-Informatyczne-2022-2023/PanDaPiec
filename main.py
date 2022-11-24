@@ -29,7 +29,6 @@ class QuizApp(App):
         sm.add_widget(DebugScreen())
         sm.add_widget(TestScreen())
         sm.add_widget(CorrectAnswersScreen())
-
         return sm
 
 
