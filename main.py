@@ -5,6 +5,7 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 import screens.summary_screen
 # Importy ekranów
 from screens.TestScreen import TestScreen
+from screens.CorrectAnswersScreen import CorrectAnswersScreen
 from screens.summary_screen import SummaryScreen
 from screens.DifficultyScreen import DifficultyScreen
 
@@ -31,6 +32,7 @@ class QuizApp(App):
         # Tu dodajemy wszystkie ekrany
         sm.add_widget(DebugScreen())
         sm.add_widget(TestScreen())
+        sm.add_widget(CorrectAnswersScreen())
         sm.add_widget(SummaryScreen())
         sm.add_widget(DifficultyScreen())
         return sm
