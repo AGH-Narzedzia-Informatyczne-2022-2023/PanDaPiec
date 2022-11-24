@@ -38,7 +38,7 @@
             pos_hint: {"center_x": 0.5, "center_y": 0.475}
             on_press:
                 root.manager.transition.direction = "left"
-                root.manager.current = "Test"
+                root.manager.current = "DifficultyScreen"
 
         Button:
             text: "Pytania"
@@ -95,3 +95,20 @@
             on_press:
                 root.manager.transition.direction = "right"
                 root.manager.current = "Debug"
+                
+<DifficultyScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran wyboru poziomu trudności"
+            font_size: 32
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+                
