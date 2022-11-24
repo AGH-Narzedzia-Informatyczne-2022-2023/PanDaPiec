@@ -38,7 +38,7 @@
             pos_hint: {"center_x": 0.5, "center_y": 0.475}
             on_press:
                 root.manager.transition.direction = "left"
-                root.manager.current = "Test"
+                root.manager.current = "DifficultyScreen"
 
         Button:
             text: "Pytania"
@@ -54,7 +54,7 @@
             pos_hint: {"center_x": 0.5, "center_y": 0.225}
             on_press:
                 root.manager.transition.direction = "left"
-                root.manager.current = "Test"
+                root.manager.current = "SummaryScreen"
 
         Button:
             text: "Poprawne odpowiedzi"
@@ -62,7 +62,7 @@
             pos_hint: {"center_x": 0.5, "center_y": 0.1}
             on_press:
                 root.manager.transition.direction = "left"
-                root.manager.current = "Test"
+                root.manager.current = "CorrectAnswers"
 
 <TestScreen>:
     FloatLayout:
@@ -80,11 +80,79 @@
                 root.manager.transition.direction = "right"
                 root.manager.current = "Debug"
 
+
 <QuestionScreen>:
     FloatLayout:
         Label:
             text: "QuestionScreen"
             font_size: 33
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+
+<CorrectAnswersScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran poprawnych odpowiedzi"
+            font_size: 32
+            # size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+            text_size: self.width, None
+            size_hint: 1, None
+            height: self.texture_size[1]
+            halign: "center"
+            
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+
+<SummaryScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran podsumowania"
+            font_size: 32
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+
+        Image:
+            source: './media/images/lazypanda.jpg'
+            size: self.texture_size
+                
+<DifficultyScreen>:
+    FloatLayout:
+        Label:
+            text: "Ekran wyboru poziomu trudności"
+            font_size: 32
+            size_hint: 0.2, 0.1
+            pos_hint: {"center_x": 0.5, "top": 1}
+
+        Button:
+            text: "<- Powrót"
+            size_hint: 0.8, 0.1
+            pos_hint: {"center_x": 0.5, "center_y": 0.1}
+            on_press:
+                root.manager.transition.direction = "right"
+                root.manager.current = "Debug"
+
             size_hint: 0.2, 0.1
             pos_hint: {"center_x": 0.5, "top": 1}
 
