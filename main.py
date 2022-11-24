@@ -10,6 +10,7 @@ from screens.CorrectAnswersScreen import CorrectAnswersScreen
 from screens.summary_screen import SummaryScreen
 from screens.DifficultyScreen import DifficultyScreen
 from screens.CategoryScreen import CategoryScreen
+from screens.MainScreen import MainScreen
 
 
 # Rozmiar okna
@@ -35,7 +36,7 @@ class QuizApp(App):
         sm.add_widget(DebugScreen())
         sm.add_widget(TestScreen())
         sm.add_widget(QuestionScreen())
-
+        sm.add_widget(MainScreen())
         sm.add_widget(CorrectAnswersScreen())
         sm.add_widget(SummaryScreen())
         sm.add_widget(DifficultyScreen())
