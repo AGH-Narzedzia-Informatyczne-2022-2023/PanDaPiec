@@ -162,9 +162,9 @@
             pos_hint: {"center_x": 0.5, "top": 1}
 
         Button:
-            text: "Nie ma powrotu :)"
+            text: "<- Powrót"
             size_hint: 0.8, 0.1
             pos_hint: {"center_x": 0.5, "center_y": 0.1}
             on_press:
                 root.manager.transition.direction = "right"
-                root.manager.current = "Category"
+                root.manager.current = "Debug"
